@@ -21,6 +21,14 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: { model: "Messages" },
       },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+      },
     });
   },
   down: (queryInterface, Sequelize) => {

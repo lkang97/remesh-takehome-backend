@@ -6,18 +6,26 @@ module.exports = {
       {
         title: "Demo Conversation 1",
         startDate: new Date().toDateString(),
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         title: "Demo Conversation 2",
         startDate: new Date().toDateString(),
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         title: "Demo Conversation 3",
         startDate: new Date().toDateString(),
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         title: "Demo Conversation 4",
         startDate: new Date().toDateString(),
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
     ]);
   },
