@@ -8,20 +8,19 @@
      - This endpoint will create a new conversation
    - GET "/conversations"
      - This endpoint will grab all conversations
-   - GET "/conversations/:id"
-     - This endpoint will grab all messages for a particular conversation by id
 
 2. Messages
 
-   - POST "/messages"
-     - This endpoint will create a new message
-   - GET "/messages/:id/thoughts"
-     - This endpoint will grab all thoughts for a particular message
+   - GET "/conversations/:id/messages"
+     - This endpoint will grab all messages for a particular conversation by id
+   - POST "/conversations/:id/messages"
+     - This endpoint will create a new message for a particular conversation by id
 
 3. Thoughts
-
-   - POST "/thoughts"
-     - This endpoint will create a new thought
+   - GET "/messages/:id/thoughts"
+     - This endpoint will grab all thoughts for a particular message by id
+   - POST "messages/:id/thoughts"
+     - This endpoint will create a new thought for a particular message by id
 
 # Data Schema
 
