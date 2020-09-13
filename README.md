@@ -1,5 +1,6 @@
 # Remesh Takehome Assessment
 
+[Live Link to Site](https://remesh-takehome-kang.netlify.app/)
 [Link to Frontend Repo](https://github.com/lkang97/remesh-takehome-frontend)
 
 # Backend Routes
