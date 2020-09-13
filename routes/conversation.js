@@ -6,6 +6,7 @@ const { asyncHandler } = require("../utils");
 
 const router = express.Router();
 
+// This route will grab all the conversations.
 router.get(
   "/conversations",
   asyncHandler(async (req, res) => {
@@ -18,6 +19,7 @@ router.get(
   })
 );
 
+// This route will create a new conversation.
 router.post(
   "/conversations",
   asyncHandler(async (req, res) => {

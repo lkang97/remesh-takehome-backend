@@ -1,11 +1,12 @@
 const express = require("express");
 const db = require("../db/models");
-const { Conversation, Message } = db;
+const { Message } = db;
 
 const { asyncHandler } = require("../utils");
 
 const router = express.Router();
 
+// This route will get all the messages for a conversation by conversation id
 router.get(
   "/conversations/:id(\\d+)/messages",
   asyncHandler(async (req, res) => {
@@ -20,6 +21,7 @@ router.get(
   })
 );
 
+// This route will create a new message for a conversation by conversation id.
 router.post(
   "/conversations/:id(\\d+)/messages",
   asyncHandler(async (req, res) => {
