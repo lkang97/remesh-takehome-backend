@@ -12,7 +12,7 @@ router.get(
     const conversationId = parseInt(req.params.id, 10);
     const messages = await Message.findAll({
       where: { conversationId },
-      order: [["createdAt", "DESC"]],
+      order: [["createdAt", "ASC"]],
     });
     if (messages) {
       res.json({ messages });
